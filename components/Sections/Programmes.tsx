@@ -17,12 +17,12 @@ export const Programmes: React.FC<ProgrammesProps> = ({ onEnquire }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Card 1 */}
-                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[400px] md:min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
                     <div className="absolute inset-0">
                          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90" alt="" />
                          <div className="absolute inset-0 bg-gradient-to-t from-london-green via-london-green/50 to-transparent opacity-90"></div>
                     </div>
-                    <div className="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                    <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-white">
                         <h3 className="text-2xl font-serif mb-4">Busy Professional</h3>
                         <p className="text-sm text-white/80 mb-8 leading-relaxed">
                             Protect time in your diary for health, creating energy for your career. Efficient 45-60 min sessions tailored to your schedule.
@@ -34,12 +34,12 @@ export const Programmes: React.FC<ProgrammesProps> = ({ onEnquire }) => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[400px] md:min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
                     <div className="absolute inset-0">
                          <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90" alt="" />
                          <div className="absolute inset-0 bg-gradient-to-t from-london-green via-london-green/50 to-transparent opacity-90"></div>
                     </div>
-                    <div className="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                    <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-white">
                         <h3 className="text-2xl font-serif mb-4">Post-Natal Rebuild</h3>
                         <p className="text-sm text-white/80 mb-8 leading-relaxed">
                              A safe, gradual return to exercise. We focus on core restoration, posture, and strength, respecting your recovery.
@@ -51,12 +51,12 @@ export const Programmes: React.FC<ProgrammesProps> = ({ onEnquire }) => {
                 </div>
 
                 {/* Card 3 */}
-                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+                <div className="relative group rounded-[2.5rem] overflow-hidden min-h-[400px] md:min-h-[500px] bg-white shadow-sm hover:shadow-xl transition-all duration-500">
                     <div className="absolute inset-0">
                          <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=2072&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90" alt="" />
                          <div className="absolute inset-0 bg-gradient-to-t from-london-green via-london-green/50 to-transparent opacity-90"></div>
                     </div>
-                    <div className="absolute inset-0 p-10 flex flex-col justify-end text-white">
+                    <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end text-white">
                         <h3 className="text-2xl font-serif mb-4">Small Groups</h3>
                         <p className="text-sm text-white/80 mb-8 leading-relaxed">
                             Training on the Common. Enjoy the motivation of a team with the expert guidance of a personal coach.

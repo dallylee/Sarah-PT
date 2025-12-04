@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../UI/Button';
 import { EnquiryFormData, TrainingType, TrainingLocation, StartTimeframe } from '../../types';
+import { CheckCircle } from 'lucide-react';
 
 interface EnquiryFormProps {
   initialInterest: TrainingType | null;
@@ -59,15 +60,21 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialInterest }) => 
 
   if (status === 'success') {
     return (
-      <section className="py-24 bg-london-green text-white text-center">
-        <div className="max-w-2xl mx-auto px-6">
-            <h2 className="text-4xl font-serif mb-6">Enquiry Sent</h2>
+      <section className="py-24 bg-london-green text-white text-center rounded-[3rem] mx-4 my-12">
+        <div className="max-w-2xl mx-auto px-6 flex flex-col items-center">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle size={32} className="text-gold" />
+            </div>
+            <h2 className="text-4xl font-serif mb-4">Enquiry Received</h2>
+            <p className="text-stone-light text-lg mb-8 font-light">
+                Thank you, {formData.name.split(' ')[0]}. I will review your details and get back to you within one working day.
+            </p>
             <Button 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-london-green"
               onClick={() => setStatus('idle')}
             >
-              Send another
+              Send another enquiry
             </Button>
         </div>
       </section>
@@ -155,7 +162,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialInterest }) => 
                     variant="green"
                     className="text-lg py-4 shadow-xl max-w-md mx-auto"
                 >
-                    Request Consultation
+                    {status === 'submitting' ? 'Sending...' : 'Request Consultation'}
                 </Button>
             </div>
         </form>

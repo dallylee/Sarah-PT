@@ -53,7 +53,7 @@ export const WaysToTrain: React.FC<WaysToTrainProps> = ({ onEnquireGroup }) => {
         </div>
 
         <div className="mt-20">
-             <Button onClick={onEnquireGroup} variant="green" className="bg-white text-london-green hover:bg-stone-100 hover:text-london-green border-none">
+             <Button onClick={onEnquireGroup} variant="primary">
                 View Group Schedules
              </Button>
         </div>
